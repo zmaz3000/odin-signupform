@@ -1,17 +1,20 @@
 html{
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
+    padding: 15px;
+    background-color: white;
 }
 
 
 
 body{
-    height: 100%;
-    width: 100%;
+    height: 97%;
+    /* width: 100%; */
     margin: 0;
     padding: 0;
     background-color: #F6F4EB;
     font-family: 'Montserrat', 'Roboto', sans-serif;
+    box-shadow: 5px 10px 10px lightgrey;
    
 }
 
@@ -25,7 +28,9 @@ h2{
 
 
 
+#brandname:hover{
 
+}
 
 .icon{
     height: 200px;
@@ -40,13 +45,15 @@ h2{
 
 
 .header{
-    margin-top: 3%;    
-    /* height: 50px; */
+    /* margin-top: 3%;     */
+    display: flex;
+    flex-direction: column;
+    
     
     padding-top: 1rem;
     padding-left: 4rem;
     padding-right: 4rem;
-    margin-bottom: 3rem;
+    
 }
 
 
@@ -57,12 +64,12 @@ h2{
     display: flex;
     flex: 1 1 auto;
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .container-one{
     display: flex;
-    width: 40%;
+    flex: 40%;
     height:100%;
     flex-wrap: wrap;
     /* flex-direction: column; */
@@ -81,8 +88,9 @@ h2{
 
 .container-two{
     display: flex;
-    width: 60%;
+    flex: 60%;
     flex-direction: column;
+    gap: 70px;
     /* flex-wrap: wrap; */
 }
 
@@ -98,7 +106,7 @@ h2{
     padding: 1rem 4rem;
     box-shadow: 2px 5px 5px lightgray;
     height: 25%;
-    width: 100%;
+    /* width: 100%; */
     padding-bottom: 10rem;
     /* margin-top: 31%; */
 }
@@ -138,9 +146,9 @@ input{
 
 .banner{
     width: 100%;
-    margin-top: 5.5%;
+    margin-top: 10.8%;
     display: flex;
-    
+    flex-wrap: wrap;
     flex-direction: row;
     background-color: black;
     opacity: 0.5;
@@ -170,7 +178,8 @@ input{
 }
 
 .calltoaction{
-    padding: 4rem;
+    
+    padding-left: 4rem;
 }
 
 .calltoaction button{
@@ -198,23 +207,24 @@ button:active{
     opacity: 0.4;
 }
 
-@media only screen  and (max-width: 981px){
+@media (max-width: 981px){
    .container{
     flex-direction: column;
    }
 
    .container-one{
-    width: 100%;
+    flex: 100%
     
     
    }
 
    .banner{
     margin-top: 0;
+    text-align: center;
    }
 
    .container-two{
-    width: 100%;
+    flex: 100%;
    }
    html{
     overflow-y: scroll;
