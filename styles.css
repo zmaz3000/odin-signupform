@@ -1,0 +1,259 @@
+html{
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F4EB;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+   
+}
+
+h1{
+    font-family: 'Roboto', 'Montserrat', sans-serif;
+}
+
+h2{
+    font-weight: 500;
+}
+
+
+
+
+
+.icon{
+    height: 200px;
+    width: 200px;
+    
+    /* margin-left: 12rem; */
+}
+
+
+
+
+
+
+.header{
+    margin-top: 3%;    
+    /* height: 50px; */
+    
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+.container{
+    display: flex;
+    flex: 1 1 auto;
+    height: 100%;
+    width: 100%;
+}
+
+.container-one{
+    display: flex;
+    width: 40%;
+    height:100%;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    background-image: url(/images/mypicture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-size: 100% 100%;
+    align-items: start;
+    
+}
+
+
+
+
+.container-two{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+.container-two div{
+    flex: 1 1 auto;
+    
+}
+
+.myform{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem 4rem;
+    box-shadow: 2px 5px 5px lightgray;
+    height: 25%;
+    width: 100%;
+    padding-bottom: 10rem;
+    /* margin-top: 31%; */
+}
+
+.myform-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+label, input{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-weight: 300;
+}
+
+input{
+    width: 18rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: 1rem;
+}
+
+.item{
+    width: 50%;
+    margin-bottom: 1rem;
+    
+    /* flex-grow: 10; */
+}
+
+
+.banner{
+    width: 100%;
+    margin-top: 5.5%;
+    display: flex;
+    
+    flex-direction: row;
+    background-color: black;
+    opacity: 0.5;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+
+
+
+.banner h2{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 900;
+    
+}
+
+.banner h2 span{
+    font-style: italic;
+    font-weight: 900;
+
+}
+
+.calltoaction{
+    padding: 4rem;
+}
+
+.calltoaction button{
+    /* background-color: #7EAA92; */
+    /* background-color: #61793d; */
+    background-color: #a3b25f;
+    font-size: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    color: white;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+button:active{
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+@media only screen  and (max-width: 981px){
+   .container{
+    flex-direction: column;
+   }
+
+   .container-one{
+    width: 100%;
+    
+    
+   }
+
+   .banner{
+    margin-top: 0;
+   }
+
+   .container-two{
+    width: 100%;
+   }
+   html{
+    overflow-y: scroll;
+   }
+}
+
+.calltoaction a{
+    text-decoration: none;
+    /* color: #7EAA92; */
+    /* color: #61793d; */
+    color: #a3b25f;
+    font-weight: 900;
+}
+
+
+
+.creditsclass{
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    color: white;
+}
+
+.creditsclass a{
+    
+    color: white;
+}
+
+ .holy{
+    position: relative;
+    top: -15px;
+}
+
+
+
+
+
+
+
+
+
+
